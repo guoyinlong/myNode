@@ -1,0 +1,168 @@
+.wrap{
+  background-color: #fff;
+  padding: 20px;
+  min-height: inherit;
+  /*>div:first-child{
+    min-height: inherit;
+  }*/
+}
+
+@border-color:#daebf5;
+@border:1px solid @border-color !important;
+@thead-bg-color:#7192a6;
+@tbody-cell-bg-color:#e9f2f7;
+@tbody-cell-color:#345669;
+@tbody-cell2n-bg-color:#ffffff;
+.orderTable{
+  div[class='ant-table-header']{
+    background: inherit;
+  }
+  table{
+    >thead[class='ant-table-thead']> tr > th>span>i{
+      color:#ffffff;
+    }
+    >thead[class='ant-table-thead']> tr > th>span>i:hover{
+      color: #dbdbdb;
+    }
+
+  }
+  tbody{
+    border-left: @border;
+    border-right: @border;
+  }
+  thead >tr> th> span{
+    color: #ffffff;
+
+  }
+  thead >tr >th{
+    background: @thead-bg-color !important;
+    //text-align: left !important;
+    border-right: @border;
+    &:first-child{
+      border-left: @border;
+    }
+
+
+  }
+  tbody >tr >td{
+    background: @tbody-cell-bg-color ;
+    color:@tbody-cell-color;
+    text-align: left !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-right: @border;
+    &:first-child{
+      border-left: @border;
+    }
+  }
+  tbody >tr >td:first-child{
+  }
+  tbody >tr:nth-child(2n) >td{
+    background: @tbody-cell2n-bg-color;
+
+  }
+  tbody >tr:nth-child(2n):hover >td{
+    background: #fff4f1;
+
+  }
+  th,td{
+    border-bottom: @border;
+
+  }
+}
+.orderTable_small{
+  div[class='ant-table-header']{
+    background: inherit;
+  }
+  table{
+    font-size: 12px;
+    >thead[class='ant-table-thead']> tr > th>span>i{
+      color:#ffffff;
+    }
+    >thead[class='ant-table-thead']> tr > th>span>i:hover{
+      color: #dbdbdb;
+    }
+
+  }
+  tbody{
+    border-left: @border;
+    border-right: @border;
+  }
+  thead >tr> th> span{
+    color: #ffffff;
+
+  }
+  thead >tr >th{
+    background: @thead-bg-color !important;
+    //text-align: left !important;
+    border-right: @border;
+    &:first-child{
+      border-left: @border;
+    }
+
+
+  }
+  tbody >tr >td{
+    background: @tbody-cell-bg-color ;
+    color:@tbody-cell-color;
+    text-align: left !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-right: @border;
+    &:first-child{
+      border-left: @border;
+    }
+  }
+  tbody >tr >td:first-child{
+  }
+  tbody >tr:nth-child(2n) >td{
+    background: @tbody-cell2n-bg-color;
+
+  }
+  tbody >tr:nth-child(2n):hover >td{
+    background: #fff4f1;
+
+  }
+  th,td{
+    border-bottom: @border;
+
+  }
+}
+
+.cascaderOU{
+  li{
+    padding: 10px 25px 10px 15px!important;
+  }
+
+}
+.btns{
+  text-align:left;
+  margin-left: 515px;
+  margin-top: -30px;
+  button{
+    margin-left: 15px;
+  }
+}
+.searchTitle{
+  >span,>button{
+    margin-right: 20px;
+  }
+}
+.marks{
+  padding-top: 10px;
+  h3{
+    padding: 5px 0;
+  }
+}
+.hjTr{
+  >td{
+    background-color: #99cbd8 !important;
+    color: #FFFFFF !important;
+  }
+
+}
+.dateInput{
+  input[ class="ant-calendar-picker-input ant-input ant-input-disabled"]{
+    color:rgb(0,0,0,0.65);
+  }
+}

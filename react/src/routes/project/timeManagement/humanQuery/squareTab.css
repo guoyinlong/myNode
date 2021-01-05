@@ -1,0 +1,37 @@
+/**
+ * 作者：张楠华
+ * 创建日期：2018-06-22
+ * 邮件：zhangnh6@chinaunicom.cn
+ * 文件说明：tab
+ */
+.titleStyle{
+  display: inline-block;
+  width: 80px;
+  border: 1px solid #666666;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  color:#666666;
+  font-size:18px;
+  height:30px;
+  line-height:30px;
+}
+.titleStyleActive{
+  display: inline-block;
+  width: 80px;
+  border: 1px solid #FF9900;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  color:#FF9900;
+  font-size:18px;
+  height:30px;
+  line-height:30px;
+}
+.display{
+  display:block;
+  margin-top: 20px;
+}
+.displayNone{
+  display:none;
+}

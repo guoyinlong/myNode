@@ -1,0 +1,42 @@
+@import "../index/index.less";
+.middle{
+  overflow:hidden;
+}
+.left{
+  width: calc(~"66.5%");
+}
+.right{
+  width: calc(~"32.5%");
+  margin-left: calc(67.5%);
+  .content{
+    text-align: center;
+    .first{
+      margin-top: 30px;
+    }
+  }
+}
+.content{
+  height: 500px;
+  font-size: 16px;
+  line-height: 28px;
+  overflow: scroll;
+}
+
+.img{
+  margin-top: 20px;
+  height: 120px;
+  width: 150px;
+}
+.name{
+  color: white;
+  border-radius:3px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.classify >div:nth-child(2){
+  width: calc(~"100% - 60px");
+}
+

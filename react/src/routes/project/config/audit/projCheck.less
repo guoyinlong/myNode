@@ -1,0 +1,130 @@
+/**
+ * 作者：金冠超
+ * 创建日期：2019-07-18
+ * 邮件：jingc@itnova.com.cn
+ * 文件说明：表格样式
+ */
+
+ @child-alternate-color-0:#f6f5f7;
+ @child-alternate-color-1:#ececec;
+ 
+ .orderTable {
+   cursor:pointer;
+   table {
+     border-left: 1px solid #daebf5 !important;
+     border-right: 1px solid #daebf5 !important;
+   }
+
+
+   //设置表头文字颜色
+   thead > tr > th > span {
+     color: #ffffff;
+   }
+   //设置表头背景
+   thead > tr > th {
+     background: #7192a6;
+   }
+   //设置表格背景
+   tbody > tr > td {
+     background: #e9f2f7;
+     color: #345669;
+   }
+ 
+   tbody > tr:nth-child(2n) > td {
+     background: #ffffff;
+   }
+ 
+   //设置表格主项目默认的背景颜色
+   tbody > tr[class='ant-table-row primary ant-table-row-level-0']>td{
+     background: #e9f2f7 ;
+   }
+   //设置表格主项目偶数行的背景颜色
+   tbody > tr[class='ant-table-row primary ant-table-row-level-0']:nth-child(2n)>td{
+     background: #ffffff ;
+   }
+ 
+   //设置表格子项目上升为主项目默认的背景颜色
+   tbody > tr[class='ant-table-row child ant-table-row-level-0']>td{
+     background: @child-alternate-color-0 ;
+   }
+   //设置表格系项目上升为主项目偶数行的背景颜色
+   tbody > tr[class='ant-table-row child ant-table-row-level-0']:nth-child(2n)>td{
+     background: @child-alternate-color-1 ;
+   }
+   //设置表格子项目默认的背景颜色
+   tbody > tr[class='ant-table-row child ant-table-row-level-1']>td{
+     background: @child-alternate-color-0;
+   }
+   //设置表格子项目偶数行的背景颜色
+   tbody > tr[class='ant-table-row child ant-table-row-level-1']:nth-child(2n)>td{
+     background: @child-alternate-color-1 ;
+   }
+   //设置鼠标移动到行时的背景
+   tbody > tr:hover > td {
+     background: #fff4f1 !important;
+   }
+   //设置子项目展开时，序号边距
+   /*tbody > tr> td > span[class='ant-table-row-indent indent-level-1']{
+     padding-left:10px !important;
+   }*/
+ }
+ 
+ .page{
+   text-align: center;
+   margin-top: 10px;
+ }
+ .right{
+   text-align: right !important
+   //margin-right:2px !important;
+ }
+ //项目启动申请人申请项目时，基本信息的样式
+ .titleBox{
+   border-bottom:solid 1px #e0d6d6;
+   border-right:solid 1px #e0d6d6;
+   border-left:solid 1px #e0d6d6;
+   width: 90%;
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 35px;
+ }
+ .titleOneBox{
+   border-top:solid 1px #e0d6d6;
+   border-bottom:solid 1px #e0d6d6;
+   height: 41px;
+   background-color: #e9f2f7;
+   margin-bottom: 27px;
+ }
+ .titleOneStyles{
+   font-weight: 800;
+   font-size: large;
+   margin-left: 1%;
+   margin-top: 10px;
+ }
+ .titleRowStyles{
+   margin-bottom: 20px;
+ }
+ .leftTitle{
+   font-weight: 800;
+   float:right;
+ }
+ .titleTwoBox{
+   border-bottom:solid 1px #e0d6d6;
+   border-top:solid 1px #e0d6d6;
+   height: 41px;
+   margin-bottom: 20px;
+   background-color: #e9f2f7;
+ }
+ .dropDownStyle{
+   li{
+     width: 550px !important
+   }
+  /* li[class='ant-select-dropdown-menu-item']{
+     width: 600px !important
+   }
+   li[class='ant-select-dropdown-menu-item-active ant-select-dropdown-menu-item']{
+     width: 600px !important
+   }*/
+ }
+ .textAreaStyle{
+   color:black;
+ }

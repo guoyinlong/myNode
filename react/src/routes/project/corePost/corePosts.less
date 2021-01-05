@@ -1,0 +1,231 @@
+/**
+ * 作者：靳沛鑫
+ * 创建日期：2019-05-26
+ * 邮箱：1677401802@qq.com
+ * 文件说明：样式
+ */
+.pageContainer{
+  background:#fff;
+  padding:20px;
+  min-height: calc(100vh - 170px);
+
+  .headerInfo{
+    .middle-box{
+      display: table;
+      height: 100px;
+      .middle-inner{
+        display: table-cell;
+        vertical-align:middle;
+        ul li{
+          margin-right: 20px;
+          display: inline-block;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .space{
+    padding:0 2px;
+  }
+  :global {
+    .ant-row{
+      width:100%;
+    }
+    .ant-table-row{
+      cursor: pointer;
+      .left{
+        text-align: left;
+      }
+    }
+
+  }
+
+  .titleBox{
+    border-bottom:solid 1px #e0d6d6;
+    border-right:solid 1px #e0d6d6;
+    border-left:solid 1px #e0d6d6;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .titleOneBox{
+    border-top:solid 1px #e0d6d6;
+    border-bottom:solid 1px #e0d6d6;
+    height: 41px;
+    background-color: #e9f2f7;
+  }
+  .titleOneStyles{
+    font-weight: 800;
+    font-size: large;
+    margin-left: 1%;
+    margin-top: 10px;
+  }
+  .titleRowStyles{
+    margin-bottom: 20px;
+  }
+  .leftTitle{
+    font-weight: 800;
+    float:right;
+  }
+  .titleTwoBox{
+    border-bottom:solid 1px #e0d6d6;
+    border-top:solid 1px #e0d6d6;
+    height: 41px;
+    margin-bottom: 20px;
+    background-color: #e9f2f7;
+  }
+  .textAreaStyle{
+    color:black;
+  }
+
+  .replaceMoneyTable {
+    table {
+      border-left: 1px solid #daebf5 !important;
+      border-right: 1px solid #daebf5 !important;
+    }
+    thead > tr > th > span {
+      color: #ffffff;
+
+    }
+    thead > tr > th {
+      background: #7192a6;
+      padding: 10px 8px;
+    }
+    tbody > tr > td {
+      background: #e9f2f7;
+      color: #345669;
+      padding: 10px 8px;
+    }
+    tbody > tr:nth-child(2n) > td {
+      background: #ffffff;
+
+    }
+    tbody > tr:nth-child(2n):hover > td {
+      background: #fff4f1;
+    }
+    th, td {
+      border-bottom: 1px solid #daebf5 !important;
+    }
+
+  }
+
+}
+.container {
+  padding-top: 13px;
+  padding-bottom: 16px;
+  background: white;
+}
+.table {
+  margin: 10px;
+
+  table {
+    border-left: 1px solid #daebf5 !important;
+    border-right: 1px solid #daebf5 !important;
+  }
+
+  //列宽均分
+  /*
+  colgroup > col {
+    width: 20% !important;
+  }
+*/
+  //设置表头样式
+  thead > tr > th {
+    text-align: center !important;
+    background: #7192a6;
+    color: #ffffff;
+  }
+  /*
+    //设置表格背景
+    tbody > tr > td {
+      background: #e9f2f7;
+      color: #345669;
+    }
+  */
+  tbody > tr:nth-child(2n) > td {
+    background: #ffffff;
+  }
+
+  //设置鼠标移动到行时的背景
+  tbody > tr:hover > td {
+    background: #fff4f1 !important;
+  }
+
+  //表格数据左对齐，合计居中对齐
+  /*
+  tbody > tr > td:not(:first-child) {
+    text-align: left !important;
+  }
+}
+*/
+
+}
+
+.topText{
+  line-height: 28px;
+}
+.columnLeft{
+  text-align: left !important;
+}
+.columnCenter{
+  text-align: center !important;
+}
+.page{
+  text-align: center;
+  margin-top: 10px;
+}
+
+// 导出和撤回按钮
+.btn {
+  text-align: right;
+  margin: 0 10px;
+}
+
+// 标签
+.label {
+  margin-left: 10px;
+}
+
+// 上下间距
+.toTop {
+  margin-top: 10px;
+}
+
+//--搜索框部分样式调整 start
+// 上下间距
+.toTop {
+  margin-top: 10px;
+}
+.selectCheckHistory{
+  padding-bottom: 10px;
+}
+// 年份宽度
+.selectWidth4Year {
+  width: 100px;
+}
+// 状态宽度
+.selectWidth4State {
+  width: 100px;
+}
+
+// 项目/小组名称宽度
+.selectWidth4ProjSearch {
+  width: 170px;
+}
+// 归属部门宽度
+.selectWidth4Dept {
+  width: 180px;
+}
+// 人员所属院宽度
+.selectWidth4OUSearch {
+  width: 160px;
+}
+button{
+  margin-left: 10px;
+}
+
+//消除a标签的效果
+span > a{
+  color: #000000 !important;
+}

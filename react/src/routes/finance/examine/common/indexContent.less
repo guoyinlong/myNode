@@ -1,0 +1,85 @@
+/**
+ * 文件说明：组织绩效考核指标详情样式
+ * 作者：邬志成
+ * 邮箱：wuzc@itnova.com.cn
+ * 创建日期：2020-8-26
+ */
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap {
+    background-color: #fff;
+    padding: 5px 20px;
+    min-height: inherit;
+}
+.indexTitle {
+    .space-between();
+    &>div:first-child {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &>div:last-child {
+        .space-between();
+        &>div:first-child {
+            margin-right: 10px;
+        }
+        &>div:last-child {
+            margin-left: 10px;
+        }
+    }
+}
+.tabsWrap {
+    border-radius: 5px;
+    background-color: #F0F7FD;
+    padding: 5px 15px;
+    border: 1px solid #B9DCFB;
+    margin-top: 5px;
+    >div>div {
+        margin-bottom: 5px !important;
+        >div>div>div>div>div:not(:first-child) {
+            padding: 8px !important;
+        }
+    }
+}
+.indexTypeTable {
+    padding: 0 8px;
+}
+.indexItem {
+    padding: 5px 10px;
+    border: 1px solid #B9DCFB;
+    background-color: #fff;
+    margin-bottom: 5px;
+    &>div {
+        padding: 5px 0;
+        border-bottom: 1px dotted #B9DCFB;
+        &:last-child {
+            border: 0;
+        }
+    }
+}
+.indexItemFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    & > div:first-child {
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+    }
+    .score {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+}
+.indexItemOther {
+    display: flex;
+    font-size: 12px;
+    &>div:first-child {
+        width: 56px;
+        text-align-last: justify;
+        flex: none;
+    }
+}

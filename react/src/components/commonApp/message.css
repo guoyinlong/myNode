@@ -1,0 +1,42 @@
+/**
+ * Created by 李杰双
+ */
+/*.messageCustom{*/
+
+/*}*/
+/*.messageCustom >.ant-alert-info{*/
+  /*background: #ECF6FD;*/
+  /*border: 1px solid #ADD8F7;*/
+/*}*/
+.messageCustom >div[class='ant-alert ant-alert-info']{
+  background: #ECF6FD;
+  border: 1px solid #ADD8F7;
+}
+.messageCustom >div[class='ant-alert ant-alert-info ant-alert-with-description']{
+  background: #ECF6FD;
+  border: 1px solid #ADD8F7;
+}
+.messageCustom >div[class='ant-alert ant-alert-Warning']{
+  background: #FFFAEB;
+  border: 1px solid #FFE9A7;
+}
+.messageCustom >div[class='ant-alert ant-alert-warning ant-alert-with-description']{
+  background: #FFFAEB;
+  border: 1px solid #FFE9A7;
+}
+.messageCustom >div[class='ant-alert ant-alert-success']{
+  background: #EBF8F2;
+  border: 1px solid #A7E1C4;
+}
+.messageCustom >div[class='ant-alert ant-alert-success ant-alert-with-description']{
+  background: #EBF8F2;
+  border: 1px solid #A7E1C4;
+}
+.messageCustom >div[class='ant-alert ant-alert-error']{
+  background: #FEF0EF;
+  border: 1px solid #FABEB9;
+}
+.messageCustom >div[class='ant-alert ant-alert-error ant-alert-with-description']{
+  background: #FEF0EF;
+  border: 1px solid #FABEB9;
+}

@@ -1,0 +1,149 @@
+/**
+ * 作者：任华维
+ * 日期：2017-10-21
+ * 邮箱：renhw21@chinaunicom.cn
+ * 文件说明：待办样式
+ */
+.pageContainer{
+    background:#fff;
+    padding:20px;
+    min-height: calc(100vh - 170px);
+
+    .headerInfo{
+        .middle-box{
+            display: table;
+            height: 100px;
+            .middle-inner{
+                display: table-cell;
+                vertical-align:middle;
+                ul li{
+                    margin-right: 20px;
+                    display: inline-block;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    .space{
+        padding:0 2px;
+    }
+    :global {
+        .ant-row{
+            width:100%;
+        }
+        .ant-table-row{
+            cursor: pointer;
+            .left{
+                text-align: left;
+            }
+        }
+
+    }
+
+    .titleBox{
+      border-bottom:solid 1px #e0d6d6;
+      border-right:solid 1px #e0d6d6;
+      border-left:solid 1px #e0d6d6;
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 35px;
+    }
+    .titleOneBox{
+      border-top:solid 1px #e0d6d6;
+      border-bottom:solid 1px #e0d6d6;
+      height: 41px;
+      background-color: #e9f2f7;
+    }
+    .titleOneStyles{
+      font-weight: 800;
+      font-size: large;
+      margin-left: 1%;
+      margin-top: 10px;
+    }
+    .titleRowStyles{
+      margin-bottom: 20px;
+    }
+    .leftTitle{
+      font-weight: 800;
+      float:right;
+    }
+    .titleTwoBox{
+      border-bottom:solid 1px #e0d6d6;
+      border-top:solid 1px #e0d6d6;
+      height: 41px;
+      margin-bottom: 20px;
+      background-color: #e9f2f7;
+    }
+    .textAreaStyle{
+      color:black;
+    }
+
+     @child-alternate-color-0:#f6f5f7;
+     @child-alternate-color-1:#ececec;
+
+     .orderTable {
+       margin-top:22px;
+       margin-bottom:22px;
+       width: 100%;
+       cursor:pointer;
+       table {
+         border-left: 1px solid #daebf5 !important;
+         border-right: 1px solid #daebf5 !important;
+       }
+       //设置表头文字颜色
+       thead > tr > th > span {
+         color: #ffffff;
+       }
+       //设置表头背景
+       thead > tr > th {
+         background: #7192a6;
+       }
+       //设置表格背景
+       tbody > tr > td {
+         background: #e9f2f7;
+         color: #345669;
+       }
+
+       //设置表格主项目默认的背景颜色
+       tbody > tr[class='ant-table-row primary ant-table-row-level-0']>td{
+         background: #e9f2f7 ;
+       }
+       //设置表格主项目偶数行的背景颜色
+       tbody > tr[class='ant-table-row primary ant-table-row-level-0']:nth-child(2n)>td{
+         background: #ffffff ;
+       }
+
+       //设置表格子项目上升为主项目默认的背景颜色
+       tbody > tr[class='ant-table-row child ant-table-row-level-0']>td{
+         background: @child-alternate-color-0 ;
+       }
+       //设置表格系项目上升为主项目偶数行的背景颜色
+       tbody > tr[class='ant-table-row child ant-table-row-level-0']:nth-child(2n)>td{
+         background: @child-alternate-color-1 ;
+       }
+       //设置表格子项目默认的背景颜色
+       tbody > tr[class='ant-table-row child ant-table-row-level-1']>td{
+         background: @child-alternate-color-0;
+       }
+       //设置表格子项目偶数行的背景颜色
+       tbody > tr[class='ant-table-row child ant-table-row-level-1']:nth-child(2n)>td{
+         background: @child-alternate-color-1 ;
+       }
+       //设置鼠标移动到行时的背景
+       tbody > tr:hover > td {
+         background: #fff4f1 !important;
+       }
+       //表头左对齐
+       tr > th:nth-child(1),tr > td:nth-child(1){
+         padding-left: 2%;
+       }
+       tr > th,tr > td{
+         text-align: left !important;
+       }
+
+       tbody > tr:nth-child(2n) > td {
+         background: #ffffff;
+       }
+    }
+}

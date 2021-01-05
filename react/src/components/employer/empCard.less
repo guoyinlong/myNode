@@ -1,0 +1,144 @@
+/**
+ * Created by 李杰双
+ */
+.cardShadow{
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height:100%;
+    left: 0;
+    top:0;
+    transform: translate(9px,9px);
+    display: block;
+    border-radius: 10px;
+    z-index:1;
+    background-color: #e5e5e5;
+  }
+}
+.card{
+  width: 320px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  position: relative;
+  //height: 190px;
+  -webkit-transition: all .3s;
+  box-shadow: 0 0 0;
+  z-index: 9;
+  background-color: #ffffff;
+  &:hover{
+    box-shadow: 0 1px 9px 0 #F76442;
+  }
+
+  >div{
+    z-index: 1;
+    position: relative;
+  }
+  >div:first-child>div{
+    display: inline-block;
+  }
+  >div[class='top']{
+    padding: 15px;
+    >div[class='avt']{
+      //border: 1px solid #666;
+      border-radius: 50%;
+      width: 25%;
+      margin-top: 15px;
+      //text-align: center;
+      //font-size: 55px;
+      //line-height: 55px;
+      >img{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+      }
+    }
+    >div[class='info']{
+      padding-left: 15px;
+      vertical-align: top;
+      width: 75%;
+      >div{
+        line-height: 28px;
+        background-size: 18px;
+        //padding-left: 30px;
+        >span{
+          font-size: 14px;
+          display: inline-block;
+          width: 25px;
+          vertical-align: bottom;
+        }
+      }
+      >div:first-child{
+        font-size: 20px;
+      }
+
+
+    }
+  }
+  >div[class='foot']{
+    border-top: 1px solid #dbdbdb;
+    height: 50px;
+    >div>a{
+      display: inline-block;
+      text-align: center;
+      height: inherit;
+      line-height: 50px;
+      font-size: 16px;
+    }
+    >div[class='oneBtn']{
+      >a{
+        width: 100%;
+      }
+    }
+    >div[class='twoBtns']{
+      >a{
+        width: 50%;
+
+      }
+      >a:first-child{
+        border-right: 1px solid #ccc;
+      }
+    }
+
+  }
+}
+.cardWrap{
+  margin: 10px;
+  display: inline-block;
+  >div{
+    display: inline-block;
+    vertical-align: top;
+
+  }
+  >div:first-child{
+    margin-right: 15px;
+  }
+}
+.batch{
+  padding-bottom: 20px;
+
+}
+.cardFlex{
+  //display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around ;
+
+}
+.empty{
+  color: #ccc;text-align: center;
+  padding: 20px;
+}
+.bg_user{
+  background:url("../../assets/Images/employer/user2.png") no-repeat left 5px;
+
+}
+.bg_address{
+  background:url("../../assets/Images/employer/address.png") no-repeat left 5px;
+}
+.bg_phone{
+  background:url("../../assets/Images/employer/phone.png") no-repeat left 5px;
+}
+.bg_tag{
+  background:url("../../assets/Images/employer/tag.png") no-repeat left 5px;
+}

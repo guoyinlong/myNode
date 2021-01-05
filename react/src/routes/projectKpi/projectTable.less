@@ -1,0 +1,113 @@
+/**
+ * 作者：王超
+ * 创建日期：2017-11-20
+ * 邮箱：wangc235@chinaunicom.cn
+ * 文件说明：项目考核样式
+ */
+@select_margin: 15px 0 15px 0;
+.container {
+    background-color: #fff;
+    padding: 25px 20px;
+    min-height: inherit;
+}
+.title{
+    text-align: left;
+    font-size: 29px;
+    font-weight: 700;
+    font-family: 宋体;
+}
+.detail{
+    h1,h3,h4,.donwload{
+        text-align: center;
+        margin: 15px 0 15px 0;
+    };
+    h4>span{
+        padding: 0 10px 0 10px;
+    }
+    h4>span:last-child{
+        color: red;
+    }
+}
+.screen{
+    :global{
+        .ant-select{
+            width: 65%;
+            margin: @select_margin;
+        }
+    }
+    
+    input{
+        width: 65%;
+        margin: @select_margin;
+    }
+    
+    button{
+        margin: @select_margin;
+    }
+}
+.detailKpiTable {
+    thead >tr >th{
+    background: #7192a6;
+    padding: 10px 8px;
+  }
+}
+.orderTable{
+  table{
+    border-left: 1px solid #daebf5 !important;
+    border-right: 1px solid #daebf5 !important;
+  }
+  thead >tr> th> span{
+    color: #ffffff;
+  }
+  thead >tr >th{
+    background: #7192a6;
+    padding: 10px 8px;
+  }
+  tbody >tr >td{
+    background: #e9f2f7 ;
+    color:#345669;
+    padding: 10px 8px;
+
+  }
+  tbody >tr:nth-child(2n) >td{
+    background: #ffffff;
+
+  }
+  tbody >tr:nth-child(2n):hover >td{
+    background: #fff4f1;
+  }
+
+  th,td{
+    border-bottom: 1px solid #daebf5 !important;
+  }
+
+  tr > th,tr > td {
+    text-align: left !important;
+  }
+}
+
+.steps{
+    text-align: center;
+    >div>span {
+        width: 200px;
+        height: 135px;
+        display: inline-block;
+        line-height: 135px;
+        text-align: center;
+    }
+    >h2,h4,div{
+        text-align: center;
+    }
+    >h4{
+        margin: 15px 0 15px 0;
+    }
+    .finished {
+        background: url("../../assets/Images/pjbg2.png") no-repeat
+    }
+    .progress{
+        background: url("../../assets/Images/pjbg1.png") no-repeat
+    }
+    .pointer{
+        cursor: pointer;
+    }
+}

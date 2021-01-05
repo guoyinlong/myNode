@@ -1,0 +1,21 @@
+/**
+ * 作者：陈红华
+ * 创建日期：2017-07-31
+ * 邮箱：1045825949@qq.com
+ * 文件说明：编辑器样式
+ */
+.public-DraftStyleDefault-block {
+  /*margin: 1em 0;*/
+  /*margin:0 !important;*/
+}
+div[class='editorContainer'] div[class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr']{
+  text-align: justify;
+}
+div[class='editorContainer'] div[class='rdw-image-modal-upload-option'] {
+  height: auto;
+}
+
+div[class='editorContainer'] label[class='rdw-image-modal-upload-option-label'] {
+  display: block;
+  word-wrap:break-word;
+}

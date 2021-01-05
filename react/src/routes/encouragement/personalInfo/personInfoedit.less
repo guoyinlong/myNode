@@ -1,0 +1,40 @@
+.editItemWrap{
+  position: relative;
+  padding-right: 45px;
+
+  line-height: 28px;
+  display: inline-block;
+  width: 100%;
+  textarea{
+    line-height: 28px;
+    padding: 0;
+  }
+  &:hover{
+    >.btnGroup{
+      opacity: 1;
+    }
+  }
+  >.btnGroup{
+
+    transition: all 0.2s;
+    opacity:0;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    font-size: 18px;
+    color: #666;
+    i{
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    i:first-child{
+      color: #07BD35;
+    }
+    i:last-child{
+      color: #DD2E2E;
+    }
+  }
+}
+.btnShow{
+  opacity:1 !important;
+}

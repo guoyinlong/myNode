@@ -1,0 +1,62 @@
+.top{
+  margin-bottom: 10px;
+  background-color: white;
+  padding-top: 30px;
+  height: 100%;
+}
+
+.title{
+  float:left;
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+.tip{
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  &:hover{
+    >.yearSpan{
+      cursor: pointer;
+      color: firebrick;
+      font-weight: bolder;
+    }
+  }
+  >.yearSpan{
+    opacity: 1;
+    width: 80px;
+    display: inline;
+  }
+  >.btnGroup{
+    width: 90px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    .ant-select-selection--single{
+      height: 40px;
+    }
+  }
+}
+.img{
+  height: 140px;
+  width: 180px;
+  //margin-left: 10px;
+  margin: 0 auto;
+}
+
+.message{
+  /* width: 850px; */
+  width:~"calc(100% - 365px)";
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 15px;
+  min-height: 210px;
+  &:hover{
+    box-shadow: 0 1px 3px 0 #F76442;
+  }
+}

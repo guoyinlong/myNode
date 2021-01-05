@@ -1,0 +1,82 @@
+/**
+ * 作者：任华维
+ * 日期：2017-10-21 
+ * 邮箱：renhw21@chinaunicom.cn
+ * 文件说明：rubix风格样式
+ */
+.rubix{
+    &.layout {
+        .sider {
+            background: @menu-dark-bg;
+            color: @text-color-white;
+            //标志
+            .logo {
+                background-color:@primary-color;
+                .icon_lock{
+                    color: #DE5939;
+                }
+            }
+
+            :global {
+                .ant-menu-dark{
+                    .ant-menu-item-selected:before {
+                        border-left:5px solid @primary-color;
+                    }
+                }
+
+
+
+                .ant-tabs {
+                    &-bar {
+                        border:none;
+                    }
+                    &-nav {
+                        .ant-tabs-tab {
+                            &:hover {
+                            bottom: ;ackground: fade(#ba4e3b, 30%) !important;
+                            }
+
+                            &:active {
+                                background: fade(#ba4e3b, 30%) !important;
+                            }
+                        }
+
+                        .ant-tabs-tab-active {
+                            background: #ba4e3b !important;
+                            color: '#FA7252';
+                        }
+                    }
+                    &-tab:after {
+                        border-right: 1px solid #cf4d2e;
+                    }
+                }
+            }
+        }
+
+        //头部菜单
+        .header {
+            :global .ant-menu-horizontal {
+                & > .ant-menu-submenu {
+                    &:first-child,
+                    &:first-child.ant-menu-submenu-active,
+                    &:first-child.ant-menu-submenu-open,
+                    &:first-child.ant-menu-submenu-selected{
+                        background:#E2E2E2;
+                        .ant-menu-submenu-title{
+                            color:@text-color-white;
+                        }
+                    }
+                }
+                //sub样式
+                & > .ant-menu-submenu-active,
+                & > .ant-menu-submenu-open,
+                & > .ant-menu-submenu-selected {
+                    .ant-menu-submenu-title{
+                        color:@text-color-white;
+                    }
+                    border-bottom:2px solid @primary-color;
+                }
+            }
+        }
+    }
+}

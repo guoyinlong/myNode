@@ -1,0 +1,28 @@
+/**
+ * 作者：刘东旭
+ * 日期：2018-04-26
+ * 邮箱：liudx100@chinaunicom.cn
+ * 文件说明：财务加计扣除研发支出辅助账详情页面样式
+ */
+.container{
+  background-color: #fff;
+  padding: 25px 20px;
+  min-height: inherit;
+}
+
+.tableHead {
+  margin-bottom:30px;
+  padding: 15px;
+  border: 1px solid #f4f4f4;
+  background: #fff;
+  border-radius: 2px;
+  font-size: 14px;
+  position: relative;
+  transition: all .3s;
+  display: block;
+  overflow: hidden;
+}
+
+.coll div {
+  overflow: hidden;
+}

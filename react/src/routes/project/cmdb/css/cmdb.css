@@ -1,0 +1,19 @@
+.tableContainer{
+  padding: 25px 15px 15px 15px;
+  background: white;
+}
+.tableContainer .resultTitle{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.tableContainer .searchTitle{
+  height: 28px;
+  text-align: center
+}
+.tableContainer .searchTitle p{
+  padding: 5px;
+}
+.fontStyle{
+  text-align: center;
+}

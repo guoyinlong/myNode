@@ -1,0 +1,10 @@
+/**
+ * 作者：卢美娟
+ * 日期：2018-08-09
+ * 邮箱：lumj14@chinaunicom.cn
+ * 文件说明：人为改变被上传页面的选择部门影响的蚂蚁金服的组件样式，上传页面的选择部门中通过assignDept.css改变了蚂蚁金服自己的样式label，这里要人为手动改回来
+ */
+label[class='ant-checkbox-wrapper']{
+  /* width:100%; */
+  display: inline;
+}

@@ -1,0 +1,193 @@
+/**
+ * 作者：张楠华
+ * 日期：2018-10-8
+ * 邮箱：zhangnh6@chinaunicom.cn
+ * 功能：样式文件
+ */
+.titleSelect{
+  display: inline-block;
+  margin-top:10px;
+  margin-left:15px;
+}
+
+.wrap{
+  background-color: #fff;
+  padding: 20px;
+  min-height: 550px;
+}
+//。。。
+.configTitle{
+  margin-top:26px;
+  font-weight:bold;
+  font-size:20px;
+  float:left;
+}
+//展开icon的样式
+.iconStyle{
+  margin-top:33px;
+  margin-left:15px;
+  background: #FAF2D1;
+  border: 1px solid #D5C685;
+  border-radius: 4px;
+  width: 61px;
+  height: 20px;
+  text-align: right;
+  padding: 2px 2px;
+  cursor:pointer;
+}
+//收起icon的样式
+.iconStyleUp{
+  margin-top:33px;
+  margin-left:15px;
+  background: #FAF2D1;
+  border: 1px solid #D5C685;
+  border-radius: 4px;
+  width: 61px;
+  height: 20px;
+  text-align: right;
+  padding: 4px 4px;
+  cursor:pointer;
+}
+//现有规则展示
+.configContent{
+  margin-top: 40px;
+  font-size: 14px;
+}
+//隔离线
+.hrStyle{
+  margin-top: 20px;
+}
+//提交框的样式
+.configWarp{
+  border: 1px solid #D8D8D8;
+  padding: 10px 10px;
+  margin:10px 10px;
+  position: relative;
+}
+//树形结构框
+.treeWarp{
+  border: 1px solid #D8D8D8;
+  padding: 10px 10px;
+  margin:10px 10px;
+  width:250px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+//.selectNodeRight{
+//  position: absolute;
+//  left: 300px;
+//  top: 50px;
+//}
+//.selectNodeLeft{
+//  position: absolute;
+//  left: 300px;
+//  top: 80px;
+//}
+//.selectNodeWarp{
+//  border: 1px solid #D8D8D8;
+//  padding: 10px 10px;
+//  margin:10px 10px;
+//  width:250px;
+//  height:100px;
+//  -webkit-border-radius: 5px;
+//  -moz-border-radius: 5px;
+//  border-radius: 5px;
+//
+//  position: absolute;
+//  left: 400px;
+//  top: 10px;
+//}
+//.selectedNode{
+//  background-color: rgb(223, 234, 244);
+//  display: inline-block;
+//  margin-left: 10px;
+//  padding: 4px 8px;
+//  margin-top: 8px;
+//  cursor:pointer;
+//}
+//左边橙色的线
+.titleCarp{
+  width: 9px;
+  height: 20px;
+  background-color: rgb(247, 100, 66);
+  float: left;
+  margin-top: 32px;
+  margin-right: 10px;
+}
+//展开的字体样式
+.zhankaitext{
+  margin-top: -13px;
+  margin-right: 19px;
+}
+//收起的字体样式
+.zhankaitextUp{
+  margin-top: -15px;
+  margin-right: 17px;
+}
+//费用规则配置提交
+.feeCostSubmit{
+  display: inline-block;
+  margin-top:10px;
+  margin-left:15px;
+}
+.Transfer{
+
+}
+.TransferSubmit{
+
+}
+@border-color: #daebf5;
+@border: 1px solid @border-color !important;
+@thead-bg-color: #7192a6;
+@tbody-cell-bg-color: #e9f2f7;
+@tbody-cell-color: #345669;
+@tbody-cell2n-bg-color: #ffffff;
+@border-color:#daebf5;
+.financeTable{
+  table{
+    table-layout: fixed;
+    >thead[class='ant-table-thead']> tr > th>span>i{
+      color:#ffffff;
+    }
+    >thead[class='ant-table-thead']> tr > th>span>i:hover{
+      color: #dbdbdb;
+    }
+  }
+  tbody{
+    border-left: @border;
+    border-right: @border;
+  }
+  thead >tr> th> span{
+    color: #ffffff;
+  }
+  thead >tr >th{
+    background: @thead-bg-color !important;
+    padding: 10px 15px;
+    border-right: @border;
+    &:first-child{
+      border-left: @border;
+    }
+  }
+  tbody >tr >td{
+    background: @tbody-cell-bg-color ;
+    padding: 10px 15px;
+    color:@tbody-cell-color;
+    border-right: @border;
+    &:first-child{
+      border-left: @border;
+    }
+  }
+  tbody >tr:nth-child(2n) >td{
+    background: @tbody-cell2n-bg-color;
+  }
+  tbody >tr:nth-child(2n):hover >td{
+    background: #fff4f1;
+  }
+  th,td{
+    border-bottom: @border;
+  }
+  table[class = 'ant-table-fixed']{
+    width:390px !important;
+  }
+}

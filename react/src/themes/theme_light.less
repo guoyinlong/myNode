@@ -1,0 +1,153 @@
+/**
+ * 作者：任华维
+ * 日期：2017-10-21 
+ * 邮箱：renhw21@chinaunicom.cn
+ * 文件说明：白色主题样式
+ */
+.light{
+    &.layout {
+        .sider {
+            background: transparent;
+            color: #000;
+            .siderbar-bg-img {
+              position: absolute;
+              z-index: 0;
+              height: 100%;
+              width: 100%;
+              display: block;
+              top: 0;
+              left: 0;
+              background-size: cover;
+              background-position: center center;
+              opacity: 1;
+              transition: all 500ms;
+            }
+            //标志
+            .logo {
+                color:#fff;
+                background-color:@primary-color;
+            }
+
+            :global {
+                .ant-menu-dark{
+                    color: #000;
+                    background: transparent;
+                    .ant-menu-item,.ant-menu-submenu-title{
+                        a,span{
+                            color:#000
+                        }
+                    }
+                    //子菜单的各item
+                    .ant-menu-sub {
+                        background: transparent;
+                        .ant-menu-item-active {
+                            background-color: fade(@primary-color, 10%);
+                        }
+                        //子菜单被选中
+                        .ant-menu-item-selected {
+                            background: @primary-color;
+                        }
+                    }
+                    .ant-menu-submenu-open,.ant-menu-submenu-active {
+                        .ant-menu-submenu-title {
+                            color:#000;
+                            background-color: fade(@primary-color, 10%);
+                        }
+                    }
+                    .ant-menu-item-active {
+                        background-color: fade(@primary-color, 10%);
+                    }
+                    .ant-menu-item-selected {
+                        background-color: @primary-color;
+                        a,span{
+                            color:#fff
+                        }
+                    }
+                    .ant-menu-item-selected:before {
+                        border-left:0;
+                    }
+                    .ant-menu-item-selected:after {
+                        border-top: 12px solid transparent;
+                        border-bottom: 12px solid transparent;
+                        border-right: 10px solid #E9F1F5;
+                    }
+                }
+                .ant-tabs {
+                    &-nav {
+                        .ant-tabs-tab {
+                            &:hover {
+                                background: fade(#ba4e3b, 30%) !important;
+                            }
+
+                            &:active {
+                                background: fade(#ba4e3b, 30%) !important;
+                            }
+                        }
+
+                        .ant-tabs-tab-active {
+                            background: #ba4e3b !important;
+                            color: '#FA7252';
+                        }
+                    }
+                    &-tab:after {
+                        border-right: 1px solid #cf4d2e;
+                    }
+                }
+            }
+        }
+
+        //头部菜单
+        .header {
+            :global .ant-menu-horizontal {
+                background-color: transparent;
+                color:#89959B;
+                & > .ant-menu-submenu {
+                    border-left:1px solid fade(#89959B, 50%);
+                    //第一个子元素样式
+                    &:first-child,
+                    &:first-child.ant-menu-submenu-active,
+                    &:first-child.ant-menu-submenu-open,
+                    &:first-child.ant-menu-submenu-selected{
+                        background:#E2E2E2;
+                        .ant-menu-submenu-title{
+                            color:#89959B;
+                        }
+                    }
+                    //最后一个子元素样式
+                    &:last-child,
+                    &:last-child.ant-menu-submenu-active,
+                    &:last-child.ant-menu-submenu-open,
+                    &:last-child.ant-menu-submenu-selected{
+                        .ant-menu-submenu-title{
+                            color:#89959B;
+                        }
+                    }
+                }
+                //sub样式
+                & > .ant-menu-submenu-active,
+                & > .ant-menu-submenu-open,
+                & > .ant-menu-submenu-selected {
+                    .ant-menu-submenu-title{
+                        color:#89959B;
+                    }
+                    border-bottom:2px solid @primary-color;
+                    background-color: fade(#89959B, 15%);
+                }
+
+            }
+            .siderbutton {
+                color:#89959B;
+                &:hover {
+                    color: #89959B;
+                    background-color: fade(#89959B, 15%);
+                    border-bottom:2px solid @primary-color;
+                }
+            }
+        }
+        //底部页脚
+        .footer {
+            color: #89959B;
+            background: #fff;
+        }
+    }
+}

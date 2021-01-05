@@ -1,0 +1,128 @@
+/**
+ * 作者：薛刚
+ * 创建日期：2018-10-15
+ * 邮件：xueg@chinaunicom.cn
+ * 文件说明：实现差旅费预算变更填报页面样式文件
+ */
+
+.container {
+  background: #FFFFFF;
+  padding: 20px 10px 10px 20px;
+
+  .title {
+    text-align: center;
+    h3 {
+      margin-top: 5px;
+      color: #897f7f;
+    }
+  }
+
+  .status {
+    color: #ff0000;
+    margin-left: 5px;
+    font-family: bold;
+  }
+
+  .sum {
+    margin-top: 10px;
+    label {
+      font-size: 16px;
+    }
+    label:not(:first-child) {
+      margin-left: 10px;
+      span{
+        font-weight: bold;
+        color: #fa7252;
+      }
+    }
+  }
+
+  .table {
+    margin-top: 10px;
+
+    table {
+      border-left: 1px solid #daebf5 !important;
+      border-right: 1px solid #daebf5 !important;
+    }
+
+    //列宽均分
+    colgroup > col {
+      width: 20% !important;
+    }
+
+    //设置表头样式
+    thead > tr > th {
+      text-align: center !important;
+      background: #7192a6;
+      color: #ffffff;
+    }
+
+    //设置表格背景
+    tbody > tr > td {
+      background: #e9f2f7;
+      color: #345669;
+    }
+
+    tbody > tr:nth-child(2n) > td {
+      background: #ffffff;
+    }
+
+    //设置鼠标移动到行时的背景
+    tbody > tr:hover > td {
+      background: #fff4f1 !important;
+    }
+
+    //表格数据左对齐，合计居中对齐
+    //表格中最后一行以外的单元格数据全部左对齐
+    tbody > tr:not(:last-child) > td {
+      text-align: left !important;
+    }
+    //表格中最后一行除第一个单元格以外的数据全部左对齐
+    tbody > tr:last-child > td:not(:first-child) {
+      text-align: left !important;
+    }
+  }
+
+  .tips {
+    h4 {
+      margin: 10px 0 0 10px;
+      color: #ff0000;
+    }
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 10px;
+
+    Button:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .draftResetButton {
+    text-align: right;
+    margin-right: 20px;
+  }
+}
+
+.modal_mark_required {
+  color: #ff0000;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.modal_input_textarea {
+  display: inline-block;
+  width: 97%;
+}
+
+.modal_tips {
+  color: #fa7252;
+  margin-top: 5px;
+  margin-left: 10px;
+}

@@ -1,0 +1,282 @@
+ /**
+ *  作者: 翟金亭
+ *  创建日期: 2019-10-30
+ *  邮箱：zhaijt3@chinaunicom.cn
+ *  文件说明：培训计划调整，调整信息与原始基本信息对比页面的样式
+ */
+.formRow{
+  margin-bottom: 10px;
+  border-bottom:1px solid #e4d9d9;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.formLeftTitle{
+  font-weight: 800;
+  float:right;
+  padding-bottom:9px
+}
+.formChangeTitle{
+  font-weight: 800;
+  float:right;
+  color: red;
+  padding-bottom:9px
+}
+.contentTitle{
+  font-weight: 800;
+  padding-bottom:9px
+}
+.formNewLabel{
+  color: red;
+}
+.formText{
+  padding-bottom:9px
+}
+.compareLine{
+  border-right: 1px solid #e2e2e2;
+}
+
+.checkLogTable{
+  cursor:pointer;
+  table {
+    border-left: 1px solid #daebf5 !important;
+    border-right: 1px solid #daebf5 !important;
+  }
+  //设置表头文字颜色
+  thead > tr > th > span {
+    color: #ffffff;
+  }
+  /*//设置表头背景
+  thead > tr > th {
+    background: #7192a6;
+  }
+  //设置表格背景
+  tbody > tr > td {
+    background: #e9f2f7;
+    color: #345669;
+  }*/
+
+  thead >tr >th{
+    background: #7192a6;
+    padding: 10px 8px;
+    text-align: center !important;
+    border: solid 0.5px #aad0d4;
+  }
+  tbody >tr >td{
+    background: #e9f2f7 ;
+    color:#345669;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //text-align: left !important;
+    border: solid 0.5px #aad0d4;
+  }
+  tbody > tr:nth-child(2n) > td {
+    background: #ffffff;
+  }
+
+  //设置鼠标移动到行时的背景
+  tbody > tr:hover > td {
+    background: #fff4f1 !important;
+  }
+  //列宽
+  colgroup > col:nth-child(1){
+    width:8% !important;
+  }
+  colgroup > col:nth-child(2){
+    width:6% !important;
+  }
+  colgroup > col:nth-child(3){
+    width:16% !important;
+  }
+  colgroup > col:nth-child(4){
+    width:8% !important;
+  }
+  colgroup > col:nth-child(5){
+    width:7% !important;
+  }
+  colgroup > col:nth-child(6){
+    width:30% !important;
+  }
+  colgroup > col:nth-child(7){
+    width:13% !important;
+  }
+
+}
+
+.pageContainer{
+  background:#fff;
+  padding:20px;
+  min-height: calc(100vh - 170px);
+
+  .headerInfo{
+    .middle-box{
+      display: table;
+      height: 100px;
+      .middle-inner{
+        display: table-cell;
+        vertical-align:middle;
+        ul li{
+          margin-right: 20px;
+          display: inline-block;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .space{
+    padding:0 2px;
+  }
+  :global {
+    .ant-row{
+      width:100%;
+    }
+    .ant-table-row{
+      cursor: pointer;
+      .left{
+        text-align: left;
+      }
+    }
+
+  }
+}
+
+.coorpDept{
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+
+.fullCostDeptTable{
+  table{
+    background:#e9f2f7 !important;
+    //border:none !important;
+  }
+
+  thead >tr> th> span{
+    color: #ffffff;
+  }
+  thead >tr >th{
+    background: #7192a6;
+    padding: 10px 8px;
+    text-align: center !important;
+    border: solid 0.5px #aad0d4;
+  }
+  tbody >tr >td{
+    background: #e9f2f7 ;
+    color:#345669;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //text-align: left !important;
+    border: solid 0.5px #aad0d4;
+  }
+
+  tbody > tr:nth-child(2n) > td {
+    //background: #f6f5f7;
+    background: #ffffff;
+  }
+
+  //设置鼠标移动到行时的背景
+  tbody > tr:hover > td {
+    background: #fff4f1 !important;
+  }
+
+  /*th,td{
+    border-bottom: 1px solid black !important;
+    border-right: 1px solid black !important;
+  }*/
+}
+
+.titleBox{
+  border-bottom:solid 1px #e0d6d6;
+  border-right:solid 1px #e0d6d6;
+  border-left:solid 1px #e0d6d6;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.titleOneBox{
+  border-top:solid 1px #e0d6d6;
+  border-bottom:solid 1px #e0d6d6;
+  height: 41px;
+  background-color: #e9f2f7;
+}
+.titleOneStyles{
+  font-weight: 800;
+  font-size: large;
+  margin-left: 1%;
+  margin-top: 10px;
+}
+.titleRowStyles{
+  margin-bottom: 20px;
+}
+.leftTitle{
+  font-weight: 800;
+  float:right;
+}
+.titleTwoBox{
+  border-bottom:solid 1px #e0d6d6;
+  border-top:solid 1px #e0d6d6;
+  height: 41px;
+  margin-bottom: 20px;
+  background-color: #e9f2f7;
+}
+.textAreaStyle{
+  color:black;
+}
+
+.extraStyle{
+  //margin-left: -8px;
+  //margin-right: -8px;
+  border-bottom: 1px solid #e0d6d6;
+  margin-bottom: 9px;
+}
+
+.replaceMoneyTable{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  table{
+    background:#e9f2f7 !important;
+    border:none !important;
+  }
+  div[class='ant-table-body'] {
+    overflow-x: scroll !important;
+  }
+  thead >tr> th> span{
+    color: #ffffff;
+  }
+  thead >tr >th{
+    background: #7192a6;
+    padding: 10px 8px;
+    text-align: center !important;
+    border: solid 0.5px #aad0d4;
+  }
+  tbody >tr >td{
+    background: #e9f2f7 ;
+    color:#345669;
+    //padding: 10px 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 0.5px #aad0d4;
+    //text-align: left !important;
+  }
+  /*tbody >tr:nth-child(2n):hover >td{
+    background: #fff4f1;
+  }*/
+  tbody > tr:nth-child(2n) > td {
+    background: #f6f5f7;
+  }
+
+  //设置鼠标移动到行时的背景
+  tbody > tr:hover > td {
+    background: #fff4f1 !important;
+  }
+
+  /*th,td{
+    border-bottom: 1px solid #daebf5 !important;
+    border-right: 1px solid #f4f4f4 !important;
+  }*/
+
+}

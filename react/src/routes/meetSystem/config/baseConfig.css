@@ -1,0 +1,55 @@
+/**
+ * 作者：张楠华
+ * 日期：2018-1-23
+ * 邮件：zhangnh6@chinaunicom.cn
+ * 文件说明：基础配置样式
+ */
+.wrap{
+  background-color: #fff;
+  padding: 20px;
+  min-height: inherit;
+}
+.configTitle{
+  margin-top:30px;
+  font-weight:bold;
+  font-size:20px;
+  float:left;
+}
+.iconStyle{
+  margin-top:33px;
+  font-size: 20px;
+  margin-left:5px;
+}
+.configContent{
+  margin-top: 40px;
+  font-size: 16px;
+}
+.hrStyle{
+  margin-top: 20px;
+}
+.configWarp{
+  border: 1px solid black;
+  padding: 10px 10px;
+  margin:10px 10px;
+ }
+.contentStyle{
+  font-size: 16px;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+.uploadText{
+  margin-top: 10px;
+}
+.ouText{
+  font-size: 16px;
+}
+.configOUTitle{
+  margin-top:30px;
+  font-weight:bold;
+  font-size:20px;
+}
+.describe{
+  font-size: 16px;
+  color: #08c;
+  margin:5px 10px;
+}

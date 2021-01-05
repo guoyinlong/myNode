@@ -1,0 +1,251 @@
+/**
+ * 作者：薛刚
+ * 创建日期：2018-10-15
+ * 邮件：xueg@chinaunicom.cn
+ * 文件说明：实现差旅费预算变更填报页面样式文件
+ */
+
+.container {
+  background: #FFFFFF;
+  padding: 20px 10px 10px 20px;
+
+  .title {
+    text-align: center;
+    h2 {
+      margin-top: 5px;
+    }
+    .phase {
+      margin-top: 10px;
+      span {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      span:not(:first-child) {
+        margin-left: 10px;
+      }
+      .current {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  h4 {
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .table {
+    margin-top: 10px;
+
+    //列宽均分
+    colgroup > col {
+      //width: 20% !important;
+    }
+
+    //设置表头样式
+    thead > tr > th {
+      text-align: center !important;
+      background: #7192a6;
+      color: #ffffff;
+    }
+
+    //设置表格背景
+    tbody > tr > td {
+      background: #e9f2f7;
+      color: #345669;
+    }
+
+    tbody > tr:nth-child(2n) > td {
+      background: #ffffff;
+    }
+
+    //设置鼠标移动到行时的背景
+    tbody > tr:hover > td {
+      background: #fff4f1 !important;
+    }
+
+    td.column-info {
+      text-align: left !important;;
+      padding-left: 20px;
+    }
+
+    td.column-money {
+      text-align: right !important;;
+      padding-right: 20px;
+    }
+  }
+
+  .inner_padding {
+    margin-right: 10px;
+  }
+
+  .inner_up {
+    color: red;
+  }
+
+  .inner_icon_up {
+    color: red;
+    margin-right: 10px;
+  }
+
+  .inner_down {
+    color: green;
+  }
+
+  .inner_icon_down {
+    color: green;
+    margin-right: 10px;
+  }
+
+  .pms_button {
+    background-color: #ff786b;
+    opacity: 0.7;
+    color: white;
+  }
+
+  .button {
+    text-align: right;
+    margin: 10px 20px 0 0;
+
+    Button:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  .operations {
+    text-align: right;
+    margin-right: 20px;
+
+    Button:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.pop {
+  width: 500px;
+
+  .title {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  h4 {
+    margin-top: 10px;
+  }
+
+  .table {
+    margin: 10px;
+
+    //列宽均分
+    colgroup > col {
+      //width: 20% !important;
+    }
+
+    //设置表头样式
+    thead > tr > th {
+      text-align: center !important;
+      background: #7192a6;
+      color: #ffffff;
+    }
+
+    //设置表格背景
+    tbody > tr > td {
+      background: #e9f2f7;
+      color: #345669;
+    }
+
+    tbody > tr:nth-child(2n) > td {
+      background: #ffffff;
+    }
+
+    //设置鼠标移动到行时的背景
+    tbody > tr:hover > td {
+      background: #fff4f1 !important;
+    }
+
+    td.column-info {
+      text-align: left !important;;
+      padding-left: 20px;
+    }
+
+    td.column-money {
+      text-align: right !important;;
+      padding-right: 20px;
+    }
+
+    td.table {
+      margin-top: 10px;
+      border-left: 1px solid #daebf5 !important;
+      border-right: 1px solid #daebf5 !important;
+
+      //列宽均分
+      colgroup > col {
+        //width: 20% !important;
+      }
+
+      //设置表头样式
+      thead > tr > th {
+        text-align: center !important;
+        background: #7192a6;
+        color: #ffffff;
+      }
+
+      //设置表格背景
+      tbody > tr > td {
+        background: #e9f2f7;
+        color: #345669;
+      }
+
+      tbody > tr:nth-child(2n) > td {
+        background: #ffffff;
+      }
+
+      //设置鼠标移动到行时的背景
+      tbody > tr:hover > td {
+        background: #fff4f1 !important;
+      }
+
+      td.column-info {
+        text-align: left !important;;
+        padding-left: 20px;
+      }
+
+      td.column-money {
+        text-align: right !important;;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .table_pointer {
+    table > tbody > tr > td {
+      cursor: pointer;
+    }
+  }
+}
+
+.modal_mark_required {
+  color: #ff0000;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.modal_input_textarea {
+  display: inline-block;
+  width: 97%;
+}
+
+.return_reason {
+  margin-top: 10px;
+  margin-left: 10px;
+
+  span {
+    color: #ff786b;
+    font-family: bold;
+  }
+}

@@ -1,0 +1,43 @@
+/**
+ * 作者：张楠华
+ * 创建日期：2018-06-22
+ * 邮件：zhangnh6@chinaunicom.cn
+ * 文件说明：卡片的样式
+ */
+.manHourCard{
+  position: relative;
+  border:1px solid #ccc;
+  width: 315px;
+  display:inline-block;
+  margin: 20px 20px 20px 0;
+  padding:10px 10px;
+  border-radius:10px;
+  -webkit-transition: all .3s;
+  &:hover{
+    box-shadow: 0 1px 3px 0 #F76442;
+  }
+  >div{
+    line-height:40px;
+    >span{
+      font-size:15px;
+    }
+    >b{
+      font-size:18px;
+    }
+  }
+}
+.rightStyle{
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-size:20px;
+  font-weight:400;
+}
+.staffId{
+  display: inline-block;
+  width: 20%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+}

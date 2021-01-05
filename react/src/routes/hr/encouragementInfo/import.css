@@ -1,0 +1,8 @@
+.wrap{
+  background-color: #fff;
+  padding: 20px;
+  min-height: inherit;
+  /*>div:first-child{
+    min-height: inherit;
+  }*/
+}

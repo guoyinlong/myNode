@@ -1,0 +1,228 @@
+/**
+ * 作者：郭银龙
+ * 创建日期： 2020-10-21
+ * 邮箱: guoyl@itnova.com.cn
+ * 功能： 宣传组织详情
+ */
+import Cookie from 'js-cookie'; 
+import { message } from "antd";
+import { routerRedux } from 'dva/router';
+import * as myServices from '../../../services/newsOne/newsOneServers';
+export default {
+	namespace: 'publicityDetail', 
+	loading: true, 
+	state: {
+		detailList:"",
+		tuihuiValue:"",
+		taskid:""
+        
+	},
+    reducers: { // 刷新数据
+			save(state, action) {
+				return { ...state,
+					...action.payload
+				};
+			},
+    },
+
+
+
+
+    
+  	effects: {
+		* init({query}, {put}) {
+			yield put({
+				type:'save',
+				payload:{
+					approval_id: query.newsId,
+					difference:query.difference
+				}
+			})
+            yield put({
+                type:'queryUserInfo',
+			})
+			
+        },
+       
+           	 //详情查询
+        *queryUserInfo({}, {call, put, select}){
+			yield put({
+				type: 'save',
+				payload: {
+					detailList:"",
+					tuihuiValue:"",
+					taskid:""
+				}
+			  })
+
+			const {approval_id,difference} = yield select(v =>v.publicityDetail)
+			if(difference=="审核"){
+					let recData = {
+						approval_id:approval_id
+					  };
+				const response = yield call(myServices.showTodoApprovalDetail, recData);
+				if (response.retCode === '1') {
+				  if (response.dataRows.projApply.businessObj!=null) {
+					const res = response.dataRows.projApply.businessObj.dataRows;
+					yield put({
+					  type: 'save',
+					  payload: {
+						detailList:res, 
+						taskid:response.dataRows.taskId,
+						taskName:response.dataRows.taskName,
+						tableid:response.dataRows.projApply.tableId,
+						pass:response.dataRows.pass
+					  }
+					})
+				  }
+				}else{
+				  message.error(response.retVal);
+				}
+			  }else{
+				let recData = {
+				id: approval_id
+			  };
+            let detailData = yield call(myServices.queryDeptDetail, recData);
+            if(detailData.retCode == '1') { 
+                if(detailData.dataRows){
+					const res=detailData.dataRows
+                yield put({
+                        type: 'save',
+                        payload: {
+							detailList:res, 
+                        }
+					})
+                }
+               
+            }  
+			  }
+			
+		},
+		 //获取审批环节数据
+		 * gaojianhuanjie({argCondition ,page}, { call, put ,select}) {
+			const {approval_id,tableid} = yield select(v =>v.publicityDetail)
+			let recData = {
+				id:tableid?tableid:approval_id
+			};
+			const response = yield call(myServices.queryProOrganizationExamineItem, recData);
+			if (response.retCode === '1') {
+			  if (response.dataRows) {
+				const res = response.dataRows;
+				res.map((item, index) => {
+				  if (item.failUnm == "0") {
+				    item.failUnm = "草稿"
+				  } else if (item.failUnm == "1") {
+				    item.failUnm = "退回"
+				  }else if (item.failUnm == "2"){
+				    item.failUnm = "待部门经理审核"
+				  }else if (item.failUnm == "3"){
+				      item.failUnm = "审核通过"
+				  } 
+				  if(item.commentDetail){
+					if(JSON.parse(item.commentDetail).endApply==false){
+					item.commentDetail="不同意："+JSON.parse(item.commentDetail).opinion
+
+					}else if(JSON.parse(item.commentDetail).endApply==true){
+						item.commentDetail="同意"
+					} else{
+						item.commentDetail="重新提交"
+					}  
+
+				}
+				  
+				 
+				  item.key = index;
+				  item.type = '1';
+				});
+				yield put({
+				  type: 'save',
+				  payload: {
+					reportList: res
+				  }
+				})
+			  }
+			}else{
+			  message.error(response.retVal);
+			}
+		  },
+		   //同意审核
+			* onAgree({},{call, put,select}){
+				const {taskid,auditProcess,isYearNews}= yield select (state =>state.publicityDetail);
+		  
+				let recData={
+				  user_id:Cookie.get('userid'),
+				  user_name:Cookie.get('username'),
+				  form:JSON.stringify({endApply:true,isYearOrOutNews:auditProcess,isYearNews:isYearNews}),
+				  task_id:taskid,
+				};
+				
+				const response = yield call(myServices.completeTask, recData); 
+				if(response.retCode === '1'){
+				  if(response.dataRows){
+					  message.info('审核成功');
+						  yield put(routerRedux.push({
+							  pathname:'/adminApp/newsOne/myReview'
+						  }))
+				  }
+				}else{
+				  message.error(response.retVal);
+				}
+			  
+			  },
+			  //回退原因
+			  * tuihui({record},{call, put,select}){
+				if(record.length<200){
+				  yield put({
+						  type:'save',
+						  payload: {
+						  tuihuiValue: record,
+						  }
+					  })
+				}else{
+				  message.info("不能超过200个字符")
+				}
+					  
+		  
+			  },
+			  // 确定回退
+			  * handle({},{call, put,select}){
+				const {taskid,tuihuiValue}= yield select (v =>v.publicityDetail);
+				if(tuihuiValue==""){
+					message.info("请填写退回原因")
+				}else{
+					let recData={
+				  user_id:Cookie.get('userid'),
+				  user_name:Cookie.get('username'),
+				  form:JSON.stringify({endApply:false,opinion:tuihuiValue}),
+				  task_id:taskid,
+				};
+				const response = yield call(myServices.completeTask, recData); 
+				if(response.retCode === '1'){
+				  if(response.dataRows){
+					message.info('退回成功');
+						  yield put(routerRedux.push({
+							  pathname:'/adminApp/newsOne/myReview'
+						  }))
+				  }
+				}else{
+				  message.error(response.retVal);
+				}
+				}
+				
+			  }
+
+	},
+	subscriptions: {
+		setup({dispatch, history}) {
+			return history.listen(({pathname, query}) => {
+				if(pathname === '/adminApp/newsOne/statisticalReport/publicityDetail'){
+					dispatch({
+						type: 'init',
+								query
+                        });
+                       
+				}
+			});
+		},
+	},
+}

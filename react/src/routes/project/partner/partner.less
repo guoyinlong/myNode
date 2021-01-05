@@ -1,0 +1,130 @@
+/**
+ * 作者：张枫
+ * 创建日期：2018-02-15
+ * 邮箱：zhangf142@chinaunicom.cn
+ * 文件说明：合作伙伴样式
+ */
+.container {
+  padding-top: 13px;
+  padding-bottom: 16px;
+  background: white;
+}
+.card {
+  background: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  position: relative;
+  transition: all .3s;
+  box-shadow: 0 1px 3px 2px hsla(0,0%,66%,.5);
+
+}
+.overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width:200px;
+}
+.table {
+  margin: 10px;
+
+  table {
+    border-left: 1px solid #daebf5 !important;
+    border-right: 1px solid #daebf5 !important;
+  }
+
+  //列宽均分
+  /*
+  colgroup > col {
+    width: 20% !important;
+  }
+*/
+  //设置表头样式
+  thead > tr > th {
+    text-align: center !important;
+    background: #7192a6;
+    color: #ffffff;
+  }
+/*
+  //设置表格背景
+  tbody > tr > td {
+    background: #e9f2f7;
+    color: #345669;
+  }
+*/
+  tbody > tr:nth-child(2n) > td {
+    background: #ffffff;
+  }
+
+  //设置鼠标移动到行时的背景
+  tbody > tr:hover > td {
+    background: #fff4f1 !important;
+  }
+
+  //表格数据左对齐，合计居中对齐
+  /*
+  tbody > tr > td:not(:first-child) {
+    text-align: left !important;
+  }
+}
+*/
+
+  tbody > tr > td {
+    text-align: left !important;
+  }
+}
+.page{
+  text-align: center;
+  margin-top: 10px;
+}
+
+// 导出和撤回按钮
+.btn {
+  text-align: right;
+  margin: 0 10px;
+}
+
+// 标签
+.label {
+  margin-left: 10px;
+}
+
+// 工作量和
+.workloadSum {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+// 上下间距
+.toTop {
+  margin-top: 10px;
+}
+
+// 年度宽度
+.selectWidth4Year {
+  width: 80px;
+}
+
+// 月份宽度
+.selectWidth4Month {
+  width: 100px;
+}
+
+// 部门宽度
+.selectWidth4Dept {
+  width: 220px;
+}
+
+// 项目宽度(查询用)
+.selectWidth4ProjSearch {
+  width: 300px;
+}
+
+// 项目宽度(审核和撤回用)
+.selectWidth4Proj {
+  width: 500px;
+}
+
+// 合作伙伴宽度
+.selectWidth4Partner {
+  width: 120px;
+}

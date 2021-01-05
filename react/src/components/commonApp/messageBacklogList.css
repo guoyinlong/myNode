@@ -1,0 +1,19 @@
+/**
+ * 作者：陈红华
+ * 创建日期：2017-07-31
+ * 邮箱：1045825949@qq.com
+ * 文件说明：待办页面列表样式
+ */
+.MDContainer{float:left;width:100%;margin-top: 10px;}
+.MDContainer li{
+  float:left;
+  width:100%;
+  padding:14px 10px;
+  border-bottom:1px solid #ddd;
+}
+.MDContainer li:nth-child(1){border-top: 1px solid #ddd}
+.MessageReadFlag{color: #bbb;}
+.loadingContainer{
+  text-align: center;
+}
+.MDRightLook{float:right;margin-left:10px;min-width: 51px;}

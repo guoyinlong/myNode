@@ -1,0 +1,115 @@
+
+.pageContainer{
+  background:#fff;
+  padding:20px;
+  min-height: calc(100vh - 170px);
+
+  .headerInfo{
+    .middle-box{
+      display: table;
+      height: 100px;
+      .middle-inner{
+        display: table-cell;
+        vertical-align:middle;
+        ul li{
+          margin-right: 20px;
+          display: inline-block;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .space{
+    padding:0 2px;
+  }
+  :global {
+    .ant-row{
+      width:100%;
+    }
+    .ant-table-row{
+      cursor: pointer;
+      .left{
+        text-align: left;
+      }
+    }
+
+  }
+
+  .radioButton {
+    text-align: right;
+    margin-right: 10px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .titleBox{
+    border-bottom:solid 1px #e0d6d6;
+    border-right:solid 1px #e0d6d6;
+    border-left:solid 1px #e0d6d6;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .titleOneBox{
+    border-top:solid 1px #e0d6d6;
+    border-bottom:solid 1px #e0d6d6;
+    height: 41px;
+    background-color: #e9f2f7;
+  }
+  .titleOneStyles{
+    // font-weight: 800;
+    font-size: large;
+    margin-left: 1%;
+    margin-top: 10px;
+  }
+  .titleRowStyles{
+    margin-bottom: 20px;
+  }
+  .leftTitle{
+    // font-weight: 800;
+    float:right;
+  }
+  .titleTwoBox{
+    border-bottom:solid 1px #e0d6d6;
+    border-top:solid 1px #e0d6d6;
+    height: 41px;
+    margin-bottom: 20px;
+    background-color: #e9f2f7;
+  }
+  .textAreaStyle{
+    color:black;
+  }
+
+  .replaceMoneyTable {
+    table {
+      border-left: 1px solid #daebf5 !important;
+      border-right: 1px solid #daebf5 !important;
+    }
+    thead > tr > th > span {
+      color: #ffffff;
+
+    }
+    thead > tr > th {
+      background: #7192a6;
+      padding: 10px 8px;
+    }
+    tbody > tr > td {
+      background: #e9f2f7;
+      color: #345669;
+      padding: 10px 8px;
+    }
+    tbody > tr:nth-child(2n) > td {
+      background: #ffffff;
+
+    }
+    tbody > tr:nth-child(2n):hover > td {
+      background: #fff4f1;
+    }
+    th, td {
+      border-bottom: 1px solid #daebf5 !important;
+    }
+
+  }
+
+}

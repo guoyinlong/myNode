@@ -1,0 +1,18 @@
+/**
+ * 作者：陈红华
+ * 创建日期：2017-07-31
+ * 邮箱：1045825949@qq.com
+ * 文件说明：门户首页培训资料、常用表单组件样式
+ */
+.ant-table .ant-table-tbody > tr > td{
+  text-align: left !important;
+  font-size: 30px;
+}
+.TableContainer thead tr th,.TableContainer thead tr td{
+  text-align: left;
+}
+.TableContainer .ant-table .ant-table-tbody>tr>td,.TableContainer .ant-table .ant-table-thead>tr>th{
+  text-align: left;
+
+}
+.TableContainer table thead tr th,.TableContainer table tbody tr td{text-align:left !important;}

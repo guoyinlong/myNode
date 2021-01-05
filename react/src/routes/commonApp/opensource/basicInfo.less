@@ -1,0 +1,395 @@
+/**
+ *  作者: 耿倩倩
+ *  创建日期: 2017-08-11
+ *  邮箱：gengqq3@chinaunicom.cn
+ *  文件说明：实现GitLab-我的项目查询页面样式
+ */
+.topclass{
+  margin-left: 8%;
+  width: 84%;height: auto; border:solid 1px #ffe8d6;padding:30px 30px;background: #fff5e9
+}
+
+.secondclass{
+  margin-left: 0%;margin-top: 1%;width: 100%;height:auto;border: solid 1px #ffe9d6; padding:1px 0px 5px 0px;background: #fff
+}
+.bookTag{
+  padding:3px 13px;
+  border:2px solid transparent;
+  border-radius: 3px;
+  display: inline-block;
+  background: none;
+
+}
+.book-detail
+{
+  border:1px solid #00a2ff;
+  color: #00a2ff;
+}
+
+.canc-detail
+{
+  //background: #eb2f2f;
+  border:1px solid #eb2f2f;
+  color: #eb2f2f;
+  //min-width: 60%;
+}
+.canceled{
+  //color: #999;
+  //display: inline-block;
+  //border: 1px solid #999;
+  //background-color: #fff;
+  //padding: 3px 13px;
+  border:1px solid #999;
+  color: #999;
+  //min-width: 60%;
+}
+
+.differentColorRow{border:none}
+.differentColorRow tr:nth-child(2n) td{background:#fef6ee ;border:none}
+.differentColorRow tr:nth-child(2n+1) td{background:#fff ;border:none}
+
+.meetWrap{
+  background-color: #fff;
+  padding: 25px 20px;
+  min-height: inherit;
+  >ul{
+    text-align:center;
+    margin-top:10px;
+  }
+}
+
+.orderTable{
+  table{
+    border-left: 1px solid #daebf5 !important;
+    border-right: 1px solid #daebf5 !important;
+  }
+  thead >tr> th> span{
+    color: #ffffff;
+  }
+  thead >tr >th{
+    background: #7192a6;
+    padding: 10px 8px;
+  }
+  tbody >tr >td{
+    background: #e9f2f7 ;
+    color:#345669;
+    padding: 10px 8px;
+
+  }
+  tbody >tr:nth-child(2n) >td{
+    background: #ffffff;
+
+  }
+  tbody >tr:nth-child(2n):hover >td{
+    background: #fff4f1;
+  }
+
+
+  //列宽
+  colgroup > col:nth-child(1){
+    width:10%;
+  }
+  colgroup > col:nth-child(2){
+    width:10%;
+  }
+  colgroup > col:nth-child(3){
+    width:20%;
+  }
+  colgroup > col:nth-child(4){
+    width:13%;
+  }
+  colgroup > col:nth-child(5){
+    width:10%;
+  }
+  colgroup > col:nth-child(6){
+    width:12%;
+  }
+  colgroup > col:nth-child(7){
+     width:25%;
+   }
+
+  th,td{
+    border-bottom: 1px solid #daebf5 !important;
+  }
+
+  tr > th {
+    text-align: center !important;
+  }
+
+  //表格数据左对齐
+  tr > td:nth-child(1){
+    text-align: center !important;
+    //padding-left: 2% !important;
+  }
+  tr > td:nth-child(2){
+    text-align: center !important;
+    padding-left: 2% !important;
+  }
+  tr > td:nth-child(3){
+    text-align: left !important;
+    padding-left: 2% !important;
+  }
+  tr > td:nth-child(4){
+    text-align: left !important;
+    padding-left: 2% !important;
+  }
+  tr > td:nth-child(5){
+    text-align: center !important;
+    //padding-left: 2% !important;
+  }
+  tr > td:nth-child(6){
+    text-align: center !important;
+    //padding-left: 2% !important;
+  }
+  tr > td:nth-child(7){
+    text-align: right !important;
+    padding-right: 3% !important;
+  }
+}
+.listTable{
+  table{
+    border-left: 1px solid #daebf5 !important;
+    border-right: 1px solid #daebf5 !important;
+  }
+  thead >tr> th> span{
+    color: #ffffff;
+  }
+  thead >tr >th{
+    background: #7192a6;
+    padding: 5px 4px;
+  }
+  tbody >tr >td{
+    background: #e9f2f7 ;
+    color:#345669;
+    padding: 5px 4px;
+
+  }
+  tbody >tr:nth-child(2n) >td{
+    background: #ffffff;
+
+  }
+  tbody >tr:nth-child(2n):hover >td{
+    background: #fff4f1;
+  }
+
+
+  //列宽
+  colgroup > col:nth-child(1){
+    width:10%;
+  }
+  colgroup > col:nth-child(2){
+    width:10%;
+  }
+  colgroup > col:nth-child(3){
+    width:20%;
+  }
+  colgroup > col:nth-child(4){
+    width:13%;
+  }
+  colgroup > col:nth-child(5){
+    width:10%;
+  }
+  colgroup > col:nth-child(6){
+    width:12%;
+  }
+  colgroup > col:nth-child(7){
+    width:25%;
+  }
+
+  th,td{
+    border-bottom: 1px solid #daebf5 !important;
+  }
+
+  tr > th {
+    text-align: center !important;
+  }
+
+  //表格数据左对齐
+  tr > td:nth-child(1){
+    text-align: center !important;
+    //padding-left: 2% !important;
+  }
+  tr > td:nth-child(2){
+    text-align: center !important;
+    padding-left: 2% !important;
+  }
+  tr > td:nth-child(3){
+    text-align: left !important;
+    padding-left: 2% !important;
+  }
+  tr > td:nth-child(4){
+    text-align: left !important;
+    padding-left: 2% !important;
+  }
+  tr > td:nth-child(5){
+    text-align: center !important;
+    //padding-left: 2% !important;
+  }
+  tr > td:nth-child(6){
+    text-align: center !important;
+    //padding-left: 2% !important;
+  }
+  tr > td:nth-child(7){
+    text-align: right !important;
+    padding-right: 3% !important;
+  }
+}
+
+
+.lightInfo{
+  color:#ef5555;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  background: url("../../../assets/Images/light.png") no-repeat left top;
+}
+.meetName{
+  overflow:hidden;
+  white-space:nowrap;
+  width:200px;
+  text-overflow:ellipsis
+}
+.btnWrap{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.btnWrap2{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.headerName{
+  text-align: left;
+  //padding-bottom: 28px;
+  font-size: 29px;
+  font-weight: bold;
+  font-family: 宋体;
+}
+
+.modalTitleRight{
+  position: relative;
+  left: 63%;
+  top: -50px;
+}
+
+.btnLayOut{
+  float:right;
+}
+.btnLayOutLeft{
+  float:left;
+}
+.btnLayOutRight{
+  float:right;
+}
+
+/**
+ * @author:  zhulei
+ * @date: 2017/11/21
+ * @description:Gitlab 头样式
+ */
+.bookTitle {
+  height: 40px;
+  background: #7192a6;
+  marginLeft: 30px;
+  border-radius: 5px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: large;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+/**
+ * @author:  zhulei
+ * @date: 2017/11/21
+ * @description:Gitlab 标题样式
+ */
+.headerTitle {
+  background: #4A90E2;
+
+}
+
+/**
+ * @author:  zhulei
+ * @date: 2017/11/21
+ * @description:Gitlab 字母样式
+ */
+.letterTitle{
+  height: 30px;
+  background: #B0C7D3;
+  border-radius: 3px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.17px;
+  width: 100%;
+  padding-left: 11px;
+  text-align: left;
+  line-height: 28px;
+  margin-top: 5px;
+
+}
+
+/**
+ * @author:  zhulei
+ * @date: 2017/11/21
+ * @description:Gitlab 字体样式
+ */
+.letterStyle{
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.17px;
+
+}
+
+/**
+ * @author:  zhulei
+ * @date: 2017/11/21
+ * @description:Gitlab 数字样式，背景色不同
+ */
+.numStyle{
+  font-family: Arial-Black;
+  text-align: right;
+  font-size: 52px;
+  color: #4A90E2;
+  letter-spacing: 0.6px;
+
+}
+.numStyle1{
+  font-family: Arial-Black;
+  font-size: 52px;
+  color: #75A343;
+  letter-spacing: 0.6px;
+}
+
+/**
+ * @author:  zhulei
+ * @date: 2017/12/14
+ * @description:标题样式，背景色不同
+   *
+ */
+.titleStyle{
+  height: 44px;
+  font-family: PingFang-SC-Medium;
+  font-size: 33px;
+  color: #FFFFFF;
+  letter-spacing: 0.28px;
+  background: #4A90E2;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 11px;
+}
+.titleStyle1{
+  height: 44px;
+  font-family: PingFang-SC-Medium;
+  font-size: 33px;
+  color: #FFFFFF;
+  letter-spacing: 0.28px;
+  background: #75A343;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 11px;
+
+}
