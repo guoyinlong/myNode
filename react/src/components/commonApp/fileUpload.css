@@ -1,9 +1,0 @@
-/**
- * 作者：陈红华
- * 创建日期：2017-07-31
- * 邮箱：1045825949@qq.com
- * 文件说明：上传文件组件样式
- */
-div[class="ant-upload ant-upload-drag"]{
-  border:1px solid #ddd !important;
-}

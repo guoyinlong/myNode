@@ -1,9 +1,0 @@
-/**
- * 作者：任华维
- * 日期：2017-10-21 
- * 邮箱：renhw21@chinaunicom.cn
- * 文件说明：index页样式
- */
-html, body, :global(#root) {
-  height: 100%;
-}
